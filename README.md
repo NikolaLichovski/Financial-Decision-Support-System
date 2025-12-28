@@ -35,32 +35,32 @@ This system extends a general-purpose RAG application into a specialized **explo
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    USER INTERFACE LAYER                      │
-│         (app.py - Streamlit with preference controls)        │
+│                    USER INTERFACE LAYER                     │
+│         (app.py - Streamlit with preference controls)       │
 └──────────────────┬──────────────────────────────────────────┘
                    │
 ┌──────────────────▼──────────────────────────────────────────┐
-│              PREFERENCE TRANSLATION LAYER                    │
-│         (preference_engine.py - Context modulation)          │
+│              PREFERENCE TRANSLATION LAYER                   │
+│         (preference_engine.py - Context modulation)         │
 └──────────────────┬──────────────────────────────────────────┘
                    │
 ┌──────────────────▼──────────────────────────────────────────┐
-│                  DATA INTEGRATION LAYER                      │
-│  ┌──────────────┐  ┌─────────────────┐  ┌─────────────────┐│
-│  │ Stock Data   │  │ Rules Document  │  │ User Context    ││
-│  │ (yfinance)   │  │ (optional)      │  │ (preferences)   ││
-│  └──────────────┘  └─────────────────┘  └─────────────────┘│
-│         financial_data.py      ChromaDB                      │
+│                  DATA INTEGRATION LAYER                     │
+│  ┌──────────────┐  ┌─────────────────┐  ┌─────────────────┐ │
+│  │ Stock Data   │  │ Rules Document  │  │ User Context    │ │
+│  │ (yfinance)   │  │ (optional)      │  │ (preferences)   │ │
+│  └──────────────┘  └─────────────────┘  └─────────────────┘ │
+│         financial_data.py      ChromaDB                     │
 └──────────────────┬──────────────────────────────────────────┘
                    │
 ┌──────────────────▼──────────────────────────────────────────┐
-│            REASONING & EXPLANATION LAYER                     │
+│            REASONING & EXPLANATION LAYER                    │
 │    (query_data_dss.py - Ollama LLM with DSS prompting)      │
 └──────────────────┬──────────────────────────────────────────┘
                    │
 ┌──────────────────▼──────────────────────────────────────────┐
-│                 PRESENTATION LAYER                           │
-│          (Streamlit UI with structured output)               │
+│                 PRESENTATION LAYER                          │
+│          (Streamlit UI with structured output)              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
