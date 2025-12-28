@@ -4,7 +4,7 @@ An exploratory decision support system for financial analysis that helps users u
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/streamlit-v1.35.0-red.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
 
 ## 📸 System Demo
 
